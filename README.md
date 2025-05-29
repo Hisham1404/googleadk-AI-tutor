@@ -345,6 +345,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for education and learning**
 
-[⭐ Star this repo](https://github.com/yourusername/aitutor) • [🐛 Report Bug](https://github.com/yourusername/aitutor/issues) • [💡 Request Feature](https://github.com/yourusername/aitutor/issues)
+[⭐ Star this repo](https://github.com/hisham1404/aitutor) • [🐛 Report Bug](https://github.com/hisham1404/aitutor/issues) • [💡 Request Feature](https://github.com/hisham1404/aitutor/issues)
 
 </div> 
