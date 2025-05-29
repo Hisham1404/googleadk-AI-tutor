@@ -335,9 +335,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/aitutor/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/aitutor/discussions)
-- **Email**: support@aitutor.com
+- **Issues**: [GitHub Issues](https://github.com/hisham1404/aitutor/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/hisham1404/aitutor/discussions)
+- **Email**: hishammohammed1404@gmail.com
 
 ---
 
