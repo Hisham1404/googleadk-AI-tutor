@@ -303,9 +303,6 @@ Address already in use
 - Use connection pooling for database operations
 - Consider load balancing for high-traffic scenarios
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ### Development Setup
 
@@ -322,21 +319,11 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 - Include tests for new features
 - Update documentation as needed
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Google AI](https://ai.google.dev/) for Gemini API
-- [FastAPI](https://fastapi.tiangolo.com/) for the web framework
-- [Font Awesome](https://fontawesome.com/) for icons
-- The open-source community for inspiration and tools
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/hisham1404/aitutor/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/hisham1404/aitutor/discussions)
+- **Issues**: [GitHub Issues](https://github.com/hisham1404/googleadk-AI-tutor/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/hisham1404/googleadk-AI-tutor/discussions)
 - **Email**: hishammohammed1404@gmail.com
 
 ---
@@ -345,6 +332,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for education and learning**
 
-[⭐ Star this repo](https://github.com/hisham1404/aitutor) • [🐛 Report Bug](https://github.com/hisham1404/aitutor/issues) • [💡 Request Feature](https://github.com/hisham1404/aitutor/issues)
+[⭐ Star this repo](https://github.com/hisham1404/googleadk-AI-tutor) • [🐛 Report Bug](https://github.com/hisham1404/googleadk-AI-tutor/issues) • [💡 Request Feature](https://github.com/hisham1404/googleadk-AI-tutor/issues)
 
 </div> 
