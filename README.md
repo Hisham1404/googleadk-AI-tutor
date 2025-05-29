@@ -107,16 +107,6 @@ Create a `.env` file in the project root:
 # Google AI API Configuration (Recommended for development)
 GOOGLE_AI_API_KEY=your_google_ai_api_key_here
 
-# Alternative: Google Cloud Vertex AI (For production)
-GOOGLE_CLOUD_PROJECT=your_project_id
-GOOGLE_CLOUD_LOCATION=us-central1
-
-# Optional: Application Settings
-APP_NAME=aitutor
-DEBUG=True
-HOST=0.0.0.0
-PORT=8000
-```
 
 ### API Key Setup
 
@@ -125,13 +115,7 @@ PORT=8000
 2. Create a new API key
 3. Add it to your `.env` file as `GOOGLE_AI_API_KEY`
 
-#### Option 2: Google Cloud Vertex AI
-1. Set up a Google Cloud Project
-2. Enable Vertex AI API
-3. Configure authentication:
-   ```bash
-   gcloud auth application-default login
-   ```
+
 4. Add project details to `.env` file
 
 ## 🎓 Agent Capabilities
@@ -187,7 +171,6 @@ Mathematics: "What is the square root of 144?"
 Physics: "What is the gravitational constant?"
 Chemistry: "What are the properties of Hydrogen?"
 News: "What are the latest AI developments?"
-Multi-agent: "If light travels at c, how long to reach Alpha Centauri?"
 ```
 
 ### Frontend Features
