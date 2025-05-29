@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ============================================
+         AI Tutor - Frontend Interface
+         ============================================
+         
+         Main HTML page for the AI Tutor application.
+         Provides a modern, responsive interface for
+         interacting with the multi-agent learning system.
+         
+         Author: AI Tutor Team
+         Version: 1.0.0
+         
+         Features:
+         - Responsive design for desktop and mobile
+         - Real-time agent workflow visualization
+         - Interactive chat interface
+         - Agent status indicators
+         - Professional UI with modern styling
+         ============================================ -->
+    
+    <!-- Basic Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutor - Multi-Agent Learning System</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Application Container -->
+    <div class="app-container">
+        
+        <!-- ===================
+             APPLICATION HEADER
+             =================== -->
+        <header class="main-header">
+            <div class="header-content">
+                <!-- Logo and Branding Section -->
+                <div class="logo-section">
+                    <i class="fas fa-brain"></i>
+                    <h1>AI Tutor</h1>
+                </div>
+                
+                <!-- Application Subtitle -->
+                <div class="subtitle">Multi-Agent Learning System</div>
+                
+                <!-- Connection Status Indicator -->
+                <div class="status-indicator">
+                    <span class="status-dot active"></span>
+                    <span>Connected</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===================
+             MAIN CONTENT AREA
+             =================== -->
+        <div class="main-content">
+            
+            <!-- ===================
+                 SIDEBAR - AGENT INFO
+                 =================== -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-robots"></i> Available Agents</h3>
+                    
+                    <!-- Agent Cards List -->
+                    <div class="agent-list">
+                        
+                        <!-- Root Orchestrator Agent -->
+                        <div class="agent-card" data-agent="root">
+                            <div class="agent-icon orchestrator">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h4>Root Orchestrator</h4>
+                                <p>Manages workflow and delegates to specialists</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Mathematics Specialist Agent -->
+                        <div class="agent-card" data-agent="maths">
+                            <div class="agent-icon maths">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h4>Mathematics Agent</h4>
+                                <p>Handles calculations, algebra, calculus</p>
+                                <div class="agent-tools">
+                                    <span class="tool-tag">Calculator</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Physics Specialist Agent -->
+                        <div class="agent-card" data-agent="physics">
+                            <div class="agent-icon physics">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h4>Physics Agent</h4>
+                                <p>Covers physics concepts and constants</p>
+                                <div class="agent-tools">
+                                    <span class="tool-tag">Constants Lookup</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Chemistry Specialist Agent -->
+                        <div class="agent-card" data-agent="chemistry">
+                            <div class="agent-icon chemistry">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h4>Chemistry Agent</h4>
+                                <p>Elements, compounds, reactions</p>
+                                <div class="agent-tools">
+                                    <span class="tool-tag">Elements Lookup</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- News Analyst Agent -->
+                        <div class="agent-card" data-agent="news">
+                            <div class="agent-icon news">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h4>News Analyst</h4>
+                                <p>AI news and latest articles</p>
+                                <div class="agent-tools">
+                                    <span class="tool-tag">Google Search</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- ===================
+                 MAIN CHAT INTERFACE
+                 =================== -->
+            <main class="chat-area">
+                
+                <!-- Agent Workflow Visualization Panel -->
+                <div class="thinking-panel" id="thinking-panel">
+                    <div class="thinking-header">
+                        <h3><i class="fas fa-cogs"></i> Agent Workflow</h3>
+                        <!-- Panel Collapse/Expand Button -->
+                        <button class="collapse-btn" id="thinking-collapse">
+                            <i class="fas fa-chevron-up"></i>
+                        </button>
+                    </div>
+                    <div class="thinking-content" id="thinking-content">
+                        <!-- Default State - No Active Workflow -->
+                        <div class="thinking-placeholder">
+                            <i class="fas fa-brain"></i>
+                            <p>Agent thinking process will appear here when you ask a question</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Messages Display Window -->
+                <div class="chat-window">
+                    <div class="chat-log" id="chat-log">
+                        
+                        <!-- Welcome Message and Introduction -->
+                        <div class="welcome-message">
+                            <div class="welcome-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Welcome to AI Tutor!</h3>
+                            <p>I'm your intelligent tutoring assistant with specialized agents for different subjects. Ask me anything about mathematics, physics, or chemistry, and I'll route your question to the right specialist!</p>
+                            
+                            <!-- Interactive Example Questions -->
+                            <div class="example-questions">
+                                <p><strong>Try asking:</strong></p>
+                                <div class="example-tags">
+                                    <!-- Click-to-fill example questions -->
+                                    <span class="example-tag" onclick="fillExample('Solve: 2x + 5 = 15')">📐 Solve: 2x + 5 = 15</span>
+                                    <span class="example-tag" onclick="fillExample('What is the speed of light?')">⚡ What is the speed of light?</span>
+                                    <span class="example-tag" onclick="fillExample('Properties of Carbon')">🧪 Properties of Carbon</span>
+                                    <span class="example-tag" onclick="fillExample('Latest AI news and developments')">📰 Latest AI news</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================
+                     USER INPUT SECTION
+                     =================== -->
+                <div class="input-area">
+                    <div class="input-container">
+                        <!-- Multi-line Text Input -->
+                        <textarea id="user-input" placeholder="Ask me anything about math, physics, or chemistry..."></textarea>
+                        
+                        <!-- Send Message Button -->
+                        <button id="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Input Instructions -->
+                    <div class="input-footer">
+                        <span class="input-hint">Press Enter to send, Shift+Enter for new line</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <!-- JavaScript Application Logic -->
+    <script src="/static/script.js"></script>
+</body>
+</html> 

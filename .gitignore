@@ -1,0 +1,161 @@
+# ============================================
+# AI Tutor - Git Ignore Configuration
+# ============================================
+# 
+# This file specifies which files and directories should be ignored
+# by Git version control. Organized by category for better maintenance.
+# 
+# Author: AI Tutor Team
+# Version: 1.0.0
+# ============================================
+
+# ==========================================
+# PYTHON RUNTIME & BYTECODE
+# ==========================================
+# Python compiled bytecode and cache files
+__pycache__/               # Python cache directories
+*.py[cod]                  # Python compiled files (.pyc, .pyo, .pyd)
+*$py.class                 # Python class files
+*.so                       # Shared object files (compiled extensions)
+
+# Python interpreter and build artifacts
+.Python                    # Python executable symlink
+build/                     # Build directory
+develop-eggs/              # Development eggs
+dist/                      # Distribution directory
+downloads/                 # Downloaded packages
+eggs/                      # Egg packages
+.eggs/                     # Egg cache
+lib/                       # Library directory
+lib64/                     # 64-bit library directory
+parts/                     # Buildout parts
+sdist/                     # Source distribution
+var/                       # Variable data
+wheels/                    # Wheel packages
+*.egg-info/                # Package metadata
+.installed.cfg             # Installation configuration
+*.egg                      # Egg files
+MANIFEST                   # Manifest file
+
+# ==========================================
+# VIRTUAL ENVIRONMENTS
+# ==========================================
+# Python virtual environment directories
+.venv/                     # Virtual environment (preferred name)
+
+# ==========================================
+# ENVIRONMENT CONFIGURATION
+# ==========================================
+# Environment variables and sensitive configuration
+.env                       # Main environment file
+.env.local                 # Local environment overrides
+.env.*.local              # Environment-specific local files
+.env.development          # Development environment
+.env.staging              # Staging environment
+.env.production           # Production environment
+
+# ==========================================
+# IDE & EDITOR FILES
+# ==========================================
+# Visual Studio Code
+.vscode/                   # VS Code workspace settings
+*.code-workspace           # VS Code workspace files
+
+# JetBrains IDEs (PyCharm, IntelliJ, etc.)
+.idea/                     # IDE configuration directory
+
+# Vim and Neovim
+*.swp                      # Vim swap files
+*.swo                      # Vim swap files (alternative)
+*~                         # Temporary files
+
+# Emacs
+*~                         # Backup files
+\#*\#                      # Auto-save files
+.\#*                       # Lock files
+
+# Sublime Text
+*.sublime-workspace        # Sublime workspace
+*.sublime-project          # Sublime project
+
+# ==========================================
+# OPERATING SYSTEM FILES
+# ==========================================
+# macOS
+.DS_Store                  # macOS directory metadata
+.AppleDouble               # macOS resource forks
+.LSOverride                # macOS launch services
+
+# Windows
+Thumbs.db                  # Windows thumbnail cache
+ehthumbs.db               # Windows thumbnail cache
+Desktop.ini               # Windows folder config
+*.lnk                     # Windows shortcuts
+
+# Linux
+*~                        # Backup files
+.nfs*                     # NFS temporary files
+
+# ==========================================
+# LOGS & TEMPORARY FILES
+# ==========================================
+# Application logs
+*.log                      # General log files
+logs/                      # Log directory
+log/                       # Alternative log directory
+
+# Temporary files
+*.tmp                      # Temporary files
+*.temp                     # Temporary files
+.cache/                    # Cache directory
+
+# ==========================================
+# AI TUTOR SPECIFIC
+# ==========================================
+# Application-specific files to ignore
+uploads/                   # User uploaded files
+downloads/                 # Downloaded content
+temp/                      # Temporary processing files
+.pytest_cache/             # PyTest cache
+.coverage                  # Coverage reports
+htmlcov/                   # Coverage HTML reports
+
+# Google Cloud credentials (if accidentally placed in repo)
+*-credentials.json         # Service account keys
+service-account-*.json     # Service account files
+
+# API keys and secrets (backup protection)
+*-key.txt                  # API key files
+*-secret.txt               # Secret files
+api-keys.json              # API configuration
+
+# ==========================================
+# DEVELOPMENT & TESTING
+# ==========================================
+# Testing artifacts
+.pytest_cache/             # PyTest cache directory
+.coverage                  # Coverage data file
+htmlcov/                   # Coverage HTML reports
+.tox/                      # Tox testing environments
+.nox/                      # Nox testing sessions
+
+# Jupyter Notebooks (if used for development)
+.ipynb_checkpoints/        # Jupyter checkpoint files
+*.ipynb                    # Jupyter notebook files (if not needed in repo)
+
+# Documentation builds
+docs/_build/               # Sphinx documentation builds
+site/                      # MkDocs site builds
+
+# ==========================================
+# PACKAGE MANAGERS & DEPENDENCIES
+# ==========================================
+# Node.js (if frontend tools are used)
+node_modules/              # Node.js dependencies
+npm-debug.log*             # NPM debug logs
+yarn-debug.log*            # Yarn debug logs
+yarn-error.log*            # Yarn error logs
+
+# Pip
+pip-log.txt                # Pip logs
+pip-delete-this-directory.txt  # Pip temp files
